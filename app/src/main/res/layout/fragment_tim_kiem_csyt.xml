@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:focusable="true"
+        android:clickable="true">
+
+    <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/map"
+                  android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+        <include layout="@layout/bottom_sheet_danh_ba"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_white"
+            android:textSize="16sp"
+            android:fontFamily="@font/segoeui"
+            android:padding="@dimen/_8sdp"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:hint="CSYT"
+            android:elevation="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:focusable="false"
+            android:inputType="none"
+    />
+
+</RelativeLayout>

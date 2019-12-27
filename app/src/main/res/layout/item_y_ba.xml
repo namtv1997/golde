@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <TextView
+                android:id="@+id/txt_ma_y_te"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/ma_y_te_ca_nhan"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+        />
+
+        <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+        />
+
+        <TextView
+                android:id="@+id/txt_ho_ten"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/ho_ten"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+        />
+
+        <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+        />
+
+        <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                android:layout_gravity="center"
+        />
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/background"
+    />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:focusable="true"
+        android:clickable="true"
+>
+
+    <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_56sdp"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/segoeui"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/register_success"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+    />
+
+    <TextView
+            android:id="@+id/btn_send_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/segoeui"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/send_again"
+            android:layout_gravity="center"
+    />
+
+    <TextView
+            android:id="@+id/btn_continue"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/bg_button_primary"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="@string/continuee"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:elevation="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/btn_register"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_gravity="center_horizontal"
+    />
+
+
+</LinearLayout>

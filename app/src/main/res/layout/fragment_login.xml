@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+    <LinearLayout
+            android:id="@+id/view_title"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+                android:id="@+id/ivBack"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_back"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_title"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:layout_centerVertical="true">
+
+            <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_16sdp"
+            />
+
+            <TextView
+                    android:id="@+id/txt_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/segoeui"
+                    android:text="@string/username_or_password_incorrect"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:visibility="invisible"
+            />
+
+            <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user_register"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:background="@drawable/bg_button_white"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:hint="@string/username"
+                    android:textColorHint="@color/grey_text_hint"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/segoeui"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:elevation="@dimen/_4sdp"
+            />
+
+            <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_lock_register"
+                    android:background="@drawable/bg_button_white"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/grey_text_hint"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/segoeui"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:elevation="@dimen/_4sdp"
+
+                    android:layout_marginTop="@dimen/_16sdp"
+            />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_32sdp"
+                    android:paddingRight="@dimen/_32sdp">
+
+
+                <TextView
+                        android:id="@+id/btn_forget_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_text_hint"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="@string/forget_password"
+                        android:layout_alignParentRight="true"
+                />
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_primary"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="@string/login"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoeui"
+                    android:elevation="@dimen/_2sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@id/btn_register"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/_8sdp"/>
+
+            <TextView
+                    android:text="Hoặc đăng nhập bằng"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            <com.facebook.login.widget.LoginButton
+                    android:id="@+id/btn_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/white"
+                    android:text="Đăng nhập bằng Facebook"
+                    android:padding="@dimen/_150sdp"/>
+
+            <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/btn1_facebook"
+                        android:src="@drawable/img_facebook_button"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"/>
+
+                <ImageView
+                        android:id="@+id/btn_google"
+                        android:src="@drawable/img_google_button"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"/>
+
+                <ImageView
+                        android:id="@+id/btn_zalo"
+                        android:src="@drawable/img_zalo_button"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Chưa có tài khoản?"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:id="@+id/btn_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_16sdp"
+                        android:text="@string/register"/>
+
+                <com.google.android.gms.common.SignInButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

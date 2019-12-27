@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:focusable="true"
+        android:clickable="true"
+>
+    <RelativeLayout
+            android:id="@+id/view_title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white">
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:src="@drawable/ic_left_arrow_sign"/>
+
+
+        <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/segoeui"
+                android:textSize="20sp"
+                android:text="@string/register"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+            >
+
+                <ImageView
+                        android:id="@+id/img_logo"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/logo"
+                        android:layout_marginTop="@dimen/_32sdp"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/segoeui"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:text="@string/chon_loai_nguoi_dung"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                />
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_32sdp"
+                >
+                    <TextView
+                            android:id="@+id/btn_nguoi_dung_thuong"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_42sdp"
+                            android:background="@drawable/bg_button_primary"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:text="@string/nguoi_dung_thuong"
+                            android:gravity="center"
+                            android:fontFamily="@font/segoeui"
+                            android:elevation="@dimen/_2sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_above="@id/btn_register"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_gravity="center_horizontal"
+                    />
+
+                    <TextView
+                            android:id="@+id/btn_bac_sy"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_42sdp"
+                            android:background="@drawable/bg_button_primary"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:text="@string/bac_sy"
+                            android:gravity="center"
+                            android:fontFamily="@font/segoeui"
+                            android:elevation="@dimen/_2sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_above="@id/btn_register"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_gravity="center_horizontal"
+                    />
+
+                    <TextView
+                            android:id="@+id/btn_csyt"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_42sdp"
+                            android:background="@drawable/bg_button_primary"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:text="@string/co_so_y_te"
+                            android:gravity="center"
+                            android:fontFamily="@font/segoeui"
+                            android:elevation="@dimen/_2sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_above="@id/btn_register"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:layout_gravity="center_horizontal"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

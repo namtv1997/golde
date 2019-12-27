@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.app.goldenhealth">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+            android:name=".App"
+            android:allowBackup="true"
+            android:hardwareAccelerated="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/NoTitle"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.activity.KhamLapHoSoActivity">
+        </activity>
+
+        <meta-data
+                android:name="com.zing.zalo.zalosdk.appID"
+                android:value="@string/appID" />
+
+        <activity
+                android:name="com.zing.zalo.zalosdk.oauth.WebLoginActivity"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:host="oauthcode"
+                        android:scheme="zalo-2392616877766551705" /> <!-- Thay 12345 bằng zalo app id -->
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/map_api_key"/>
+
+        <service android:name=".manager.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/ic_notification"/>
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorPrimary"/>
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id"/>
+
+        <activity
+                android:name="com.facebook.FacebookActivity"
+                android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                android:label="@string/app_name"/>
+
+        <activity android:name="com.facebook.CustomTabActivity"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".ui.activity.MainActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+                android:name=".ui.activity.LoginActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".ui.activity.RegisterActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+                android:name=".ui.activity.HealthProfileActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+                android:name=".ui.activity.NotificationActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+                android:name=".ui.activity.KhaoSattActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+                android:name=".ui.activity.LoginOrRegisterActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+                android:name=".widget.SlideImage"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".ui.activity.PhanAnhMoiNguoiActivity"/>
+        <activity android:name=".ui.activity.PhanAnhChiTietActivity"/>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:clickable="true"
+              android:focusable="true"
+>
+
+    <RelativeLayout
+            android:id="@+id/view_title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white"
+            android:visibility="gone"
+    >
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:src="@drawable/ic_left_arrow_sign"/>
+
+
+        <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/segoeui"
+                android:textSize="20sp"
+                android:text="@string/y_ba"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+        >
+
+            <EditText
+                    android:id="@+id/edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edt_white"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/segoeui"
+                    android:padding="@dimen/_8sdp"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:hint="@string/search"
+                    android:elevation="@dimen/_4sdp"
+                    android:layout_margin="@dimen/_8sdp"
+            />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimary"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:padding="@dimen/_4sdp"
+                        android:text="@string/ma_y_te_ca_nhan"
+                        android:gravity="center"
+                />
+
+                <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/background"
+                />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:padding="@dimen/_4sdp"
+                        android:text="@string/ho_ten"
+                        android:gravity="center"
+                />
+
+                <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/background"
+                />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:padding="@dimen/_4sdp"
+                        android:gravity="center"
+                />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_y_ba"
+            />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

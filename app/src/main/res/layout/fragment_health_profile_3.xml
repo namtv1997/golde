@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:focusable="true"
+        android:clickable="true"
+>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_8sdp"
+            >
+                <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                />
+
+                <TextView
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/da_bo"
+                />
+
+                <TextView
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/yes"
+                />
+
+                <TextView
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/no"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_16sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/hut_thuoc_la_thuoc_lao"
+
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_co_hut_thuoc"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_khong_hut_thuoc"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/view_hut_thuong_xuyen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+            >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/hut_thuong_xuyen"
+
+                    />
+
+                    <CheckBox
+                            android:id="@+id/rb_da_bo_hut_thuoc"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                    />
+
+                    <CheckBox
+                            android:id="@+id/rb_co_hut_thuong_xuyen"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                    />
+
+                    <CheckBox
+                            android:id="@+id/rb_khong_hut_thuong_xuyen"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                    />
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/background"
+                        android:layout_marginTop="@dimen/_8sdp"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_16sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/uong_ruou_bia_thuong_xuyen"
+
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_co_uong_ruou"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_khong_uong_ruou"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/view_uong_thuong_xuyen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+            >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="Số ly, cốc uống/ngày"
+
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_so_coc_mot_ngay"
+                            android:layout_width="@dimen/_144sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:inputType="numberDecimal"
+                            android:textAlignment="textStart"
+                            android:paddingLeft="@dimen/_24sdp"
+                            android:padding="@dimen/_8sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:layout_marginRight="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/da_bo"
+
+                    />
+
+                    <CheckBox
+                            android:id="@+id/rb_da_bo_ruou"
+                            android:layout_width="@dimen/_144sdp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                    />
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/background"
+                        android:layout_marginTop="@dimen/_8sdp"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_16sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/su_dung_ma_tuy"
+
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_co_dung_ma_tuy"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_khong_dung_ma_tuy"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/view_dung_ma_tuy_thuong_xuyen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+            >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/su_dung_thuong_xuyen"
+
+                    />
+
+                    <CheckBox
+                            android:id="@+id/rb_da_bo_ma_tuy"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                    />
+
+                    <CheckBox
+                            android:id="@+id/rb_co_dung_ma_tuy_thuong_xuyen"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                    />
+
+                    <CheckBox
+                            android:id="@+id/rb_khong_dung_ma_tuy_thuong_xuyen"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                    />
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/background"
+                        android:layout_marginTop="@dimen/_8sdp"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_16sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/hoat_dong_the_luc"
+
+                />
+
+
+                <CheckBox
+                        android:id="@+id/rb_co_hoat_dong_the_luc"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_khong_hoat_dong_the_luc"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/view_the_duc_thuong_xuyen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_16sdp"
+                    android:visibility="gone"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="Thường xuyên tập thể dục, thể thao..."
+
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_co_the_duc_thuong_xuyen"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+
+                <CheckBox
+                        android:id="@+id/rb_khong_the_duc_thuong_xuyen"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_2"
+                />
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="@dimen/_1sdp"
+                  android:background="@color/background"
+                  android:layout_marginTop="@dimen/_16sdp"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/yeu_to_tiep_xuc_nghe_nghiep"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+            />
+
+
+            <EditText
+                    android:id="@+id/edt_moi_truong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edt_white_stroke"
+                    android:gravity="left"
+                    android:lines="5"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_margin="@dimen/_8sdp"
+            />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/thoi_gian_tiep_xuc"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                />
+
+                <EditText
+                        android:id="@+id/edt_thoi_gian_tiep_xuc"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text=""
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/bg_edt_white_stroke"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/year"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                />
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="@dimen/_1sdp"
+                  android:background="@color/background"
+                  android:layout_marginTop="@dimen/_16sdp"
+            />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/loai_ho_xi"
+                        android:paddingLeft="@dimen/_8sdp"
+                />
+
+                <TextView
+                        android:id="@+id/edt_loai_ho_xi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:inputType="textMultiLine"
+                        android:background="@drawable/bg_edt_white_stroke"
+                        android:padding="@dimen/_8sdp"
+                        android:textAlignment="textStart"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/nguy_co_nghe_nghiep"
+                        android:paddingLeft="@dimen/_8sdp"
+                />
+
+                <EditText
+                        android:id="@+id/edt_nguy_co_nghe_nghiep"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:background="@drawable/bg_edt_white_stroke"
+                        android:padding="@dimen/_8sdp"
+                        android:inputType="textMultiLine"
+                        android:textAlignment="textStart"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/nguy_co_khac"
+                        android:paddingLeft="@dimen/_8sdp"
+                />
+
+                <EditText
+                        android:id="@+id/edt_nguy_co_khac"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@drawable/bg_edt_white_stroke"
+                        android:inputType="textMultiLine"
+                        android:textAlignment="textStart"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

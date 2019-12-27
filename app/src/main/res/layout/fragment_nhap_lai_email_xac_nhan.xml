@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:focusable="true"
+        android:clickable="true"
+>
+    <RelativeLayout
+            android:id="@+id/view_title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white">
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:src="@drawable/ic_left_arrow_sign"/>
+
+
+        <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/segoeui"
+                android:textSize="20sp"
+                android:text="@string/register"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_32sdp"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/segoeui"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:text="@string/nhap_lai_email_cua_ban"
+            android:layout_gravity="center"
+            android:gravity="center"
+    />
+
+    <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:hint="@string/email"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/segoeui"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+    />
+
+    <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/bg_button_primary"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="@string/tiep_tuc"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:elevation="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/btn_register"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_gravity="center_horizontal"
+    />
+
+
+</LinearLayout>

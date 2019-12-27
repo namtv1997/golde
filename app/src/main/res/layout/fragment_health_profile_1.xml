@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:clickable="true"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="@string/basic_information"
+                android:layout_margin="@dimen/_8sdp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/blood_group"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <EditText
+                    android:id="@+id/edt_nhom_mau"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="@dimen/_24sdp"
+                    android:background="@drawable/bg_edt_white_stroke"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/height_cm"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <EditText
+                    android:id="@+id/edt_chieu_cao"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="@dimen/_24sdp"
+                    android:background="@drawable/bg_edt_white_stroke"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/weight_kg"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <EditText
+                    android:id="@+id/edt_can_nang"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="@dimen/_24sdp"
+                    android:background="@drawable/bg_edt_white_stroke"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="@dimen/_1sdp"
+              android:background="@color/background"
+              android:layout_marginTop="@dimen/_4sdp"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="@string/allergy_info"
+                android:layout_margin="@dimen/_8sdp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/drug"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <TextView
+                    android:id="@+id/txt_thuoc"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="@dimen/_42sdp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/chemicals_cosmetics"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <TextView
+                    android:id="@+id/txt_hoa_chat"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="@dimen/_42sdp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/food"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <TextView
+                    android:id="@+id/txt_thuc_pham"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="@dimen/_42sdp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/other"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <TextView
+                    android:id="@+id/txt_khac"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="@dimen/_42sdp"
+            />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="@dimen/_1sdp"
+              android:background="@color/background"
+              android:layout_marginTop="@dimen/_4sdp"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="Thông tin bệnh tật"
+                android:layout_margin="@dimen/_8sdp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/diseases"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <TextView
+                    android:id="@+id/txt_benh"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="@dimen/_42sdp"
+            />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="@dimen/_1sdp"
+              android:background="@color/background"
+              android:layout_marginTop="@dimen/_4sdp"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="@string/surgery_history"
+                android:layout_margin="@dimen/_8sdp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/part"
+                    android:paddingLeft="@dimen/_42sdp"
+            />
+
+            <TextView
+                    android:id="@+id/txt_bo_phan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="@dimen/_42sdp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

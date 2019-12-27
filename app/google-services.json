@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "652834847396",
+    "firebase_url": "https://golden-health.firebaseio.com",
+    "project_id": "golden-health",
+    "storage_bucket": "golden-health.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652834847396:android:fc2b32710db6dd37",
+        "android_client_info": {
+          "package_name": "com.app.goldenhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652834847396-b53o6qm9bps3diuu1opopjs5kpv6j43r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.goldenhealth",
+            "certificate_hash": "0065ba5dc8120185c42cfa204498591efe44461e"
+          }
+        },
+        {
+          "client_id": "652834847396-o0airknaeeg9qasipljfqtmklt32hvkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADrLQwP_Yiy9uTysImY06BRKo-AJqf5B4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652834847396-o0airknaeeg9qasipljfqtmklt32hvkd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "652834847396-6mkoiusnfj2fdfvkdsp6pq6stbpniarn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.goldenhealth"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

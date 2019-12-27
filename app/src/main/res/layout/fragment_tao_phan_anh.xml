@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/background"
+        android:focusable="true"
+        android:clickable="true"
+        android:orientation="vertical"
+>
+    <RelativeLayout
+            android:id="@+id/view_title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white"
+            android:visibility="visible"
+    >
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:src="@drawable/ic_left_arrow_sign"/>
+
+
+        <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/segoeui"
+                android:textSize="20sp"
+                android:text="@string/viet_phan_anh"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+        >
+            <EditText
+                    android:id="@+id/edt_tieu_de"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="@string/tieu_de_phan_anh"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui"
+                    android:background="@color/white"
+            />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+            />
+
+            <TextView
+                    android:id="@+id/txt_noi_phan_anh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="@string/noi_phan_anh"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_24dp"
+            />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+            />
+
+            <TextView
+                    android:id="@+id/txt_chu_de"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="@string/chuyen_muc_phan_anh"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_24dp"
+            />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+            />
+
+
+            <EditText
+                    android:id="@+id/edt_noi_dung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:lines="10"
+                    android:hint="@string/noi_dung_phan_anh"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui"
+                    android:inputType="textMultiLine"
+            />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+            />
+
+            <TextView
+                    android:id="@+id/btn_file_dinh_kem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/them_file_dinh_kem"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/segoeui"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_paper_clip"
+                    android:drawablePadding="@dimen/_8sdp"
+            />
+
+            <TextView
+                    android:id="@+id/txt_do_cong_khai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/segoeui"
+                    android:text="@string/muc_do_cong_khai"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_8sdp"
+
+            />
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+            >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                    android:id="@+id/btn_gui"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:background="@drawable/bg_button_primary"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="@string/gui"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoeui"
+                    android:elevation="@dimen/_2sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@id/btn_register"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_gravity="right"
+            />
+
+            <TextView
+                    android:id="@+id/btn_theo_doi_phan_hoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/segoeui"
+                    android:textSize="18sp"
+                    android:text="Theo dõi các phản hồi"
+                    android:background="@drawable/bg_edt_white"
+                    android:padding="@dimen/_8sdp"
+                    android:elevation="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+            />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/black"
+                    android:layout_marginTop="@dimen/_16sdp"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:background="@color/background">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_16sdp">
+
+            <LinearLayout
+                    android:id="@+id/llAvartar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:padding="@dimen/_8sdp">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <View
+                            android:id="@+id/Devider"
+                            android:background="@drawable/bg_avatar"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_width="@dimen/_50sdp"
+                            app:layout_constraintTop_toTopOf="@id/llAvartar"
+                            app:layout_constraintBottom_toBottomOf="@id/llAvartar"
+                            app:layout_constraintLeft_toLeftOf="@id/llAvartar"
+                            tools:ignore="NotSibling"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_avatar"
+                            android:layout_width="@dimen/_42sdp"
+                            android:layout_height="@dimen/_42sdp"
+                            android:src="@drawable/ic_avatar"
+                            app:layout_constraintTop_toTopOf="@id/Devider"
+                            app:layout_constraintBottom_toBottomOf="@id/Devider"
+                            app:layout_constraintRight_toRightOf="@id/Devider"
+                            app:layout_constraintLeft_toLeftOf="@id/Devider"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:id="@+id/txt_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text="Bác sĩ"
+                                android:visibility="gone"/>
+
+                        <TextView
+                                android:id="@+id/txt_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:text="Bui Quang Truong"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                            android:id="@+id/txt_work_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:text="Bệnh viện ABC"
+                            android:gravity="end"
+                            android:drawableLeft="@drawable/ic_vitri"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                        android:id="@+id/btn_notify"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginRight="@dimen/_8sdp">
+
+                    <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_bell"/>
+
+                    <TextView
+                            android:id="@+id/txt_notifi_badge"
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:fontFamily="@font/segoeui"
+                            android:text="0"
+                            android:gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/bg_circle_red"
+                            android:visibility="visible"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:focusableInTouchMode="true">
+
+                <EditText
+                        android:id="@+id/edt_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edt_white"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/segoeui"
+                        android:padding="@dimen/_4sdp"
+                        android:drawableLeft="@drawable/ic_search_black_24dp"
+                        android:hint="@string/search"
+                        android:elevation="@dimen/_4sdp"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:editable="false"
+                        android:focusable="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/view_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/btn_health_profile"
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/segoeui"
+                                    android:drawableEnd="@drawable/ic_health"
+                                    android:text="@string/health_records"
+                                    android:padding="@dimen/_4sdp"
+                                    android:gravity="center_vertical"
+                                    android:background="@drawable/bg_button_green"
+                                    android:layout_margin="@dimen/_8sdp"/>
+
+                            <TextView
+                                    android:id="@+id/btn_personal_information"
+                                    android:text="@string/personal_information"
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:drawableEnd="@drawable/ic_person_infor"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/segoeui"
+                                    android:gravity="center_vertical"
+                                    android:padding="@dimen/_4sdp"
+                                    android:background="@drawable/bg_button_purple"
+                                    android:layout_margin="@dimen/_8sdp"/>
+
+                            <TextView
+                                    android:id="@+id/btn_medical_exam_schedule"
+                                    android:text="@string/medical_exam_schedule"
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:drawableEnd="@drawable/ic_health"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/segoeui"
+                                    android:gravity="center_vertical"
+                                    android:padding="@dimen/_4sdp"
+                                    android:background="@drawable/bg_button_blue"
+                                    android:layout_margin="@dimen/_8sdp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/btn_khao_sat"
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/segoeui"
+                                    android:drawableEnd="@drawable/ic_khaosat"
+                                    android:text="@string/khao_sat_done"
+                                    android:padding="@dimen/_4sdp"
+                                    android:gravity="center_vertical"
+                                    android:background="@drawable/bg_button_khaosat"
+                                    android:layout_margin="@dimen/_8sdp"/>
+
+                            <TextView
+                                    android:id="@+id/btn_hotline"
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/segoeui"
+                                    android:drawableEnd="@drawable/ic_telephone"
+                                    android:text="@string/hotline"
+                                    android:padding="@dimen/_4sdp"
+                                    android:gravity="center_vertical"
+                                    android:background="@drawable/bg_button_orange"
+                                    android:layout_margin="@dimen/_8sdp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <LinearLayout
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_blood_infor"/>
+
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/segoeui"
+                            android:text="@string/blood_group"
+                            android:layout_marginLeft="@dimen/_16sdp"
+                    />
+
+                    <TextView
+                            android:id="@+id/txt_blood_group"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/segoe_ui_semi_bold"
+                            android:text="O"
+                            android:layout_marginLeft="@dimen/_16sdp"/>
+                </LinearLayout>
+
+                <View
+                        android:background="@color/grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                <LinearLayout
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_height_infor"/>
+
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/segoeui"
+                            android:text="@string/height"
+                            android:layout_marginLeft="@dimen/_16sdp"
+                    />
+
+                    <TextView
+                            android:id="@+id/txt_height"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/segoe_ui_semi_bold"
+                            android:text="175cm"
+                            android:layout_marginLeft="@dimen/_16sdp"/>
+                </LinearLayout>
+
+                <View
+                        android:background="@color/grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                <LinearLayout
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_weight_infor"/>
+
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/segoeui"
+                            android:text="@string/weight"
+                            android:layout_marginLeft="@dimen/_16sdp"
+                    />
+
+                    <TextView
+                            android:id="@+id/txt_weight"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/segoe_ui_semi_bold"
+                            android:text="75kg"
+                            android:layout_marginLeft="@dimen/_16sdp"/>
+                </LinearLayout>
+
+                <View
+                        android:background="@color/grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/view_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        android:layout_margin="@dimen/_8sdp">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_white"
+                            android:padding="@dimen/_8sdp">
+
+                        <TextView
+                                android:id="@+id/txt_number_children"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/green"
+                                android:text="0"
+                        />
+                        <TextView
+                                android:id="@+id/txt_children"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="@string/children"
+                                android:layout_below="@id/txt_number_children"
+                        />
+
+                        <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:src="@drawable/ic_baby"
+                                android:layout_below="@id/txt_number_children"
+                                android:layout_alignParentRight="true"
+                        />
+
+                        <View
+                                android:id="@+id/sb_background"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_4sdp"
+                                android:background="@drawable/bg_button_grey"
+                                android:layout_below="@id/txt_children"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+                        <View
+                                android:id="@+id/sb_children"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_4sdp"
+                                android:background="@drawable/bg_button_green"
+                                android:layout_below="@id/txt_children"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+                        <TextView
+                                android:id="@+id/txt_ratio_children"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="0/0 NGƯỜI"
+                                android:layout_below="@id/sb_children"
+
+                        />
+
+                        <TextView
+                                android:id="@+id/txt_percent_children"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="0%"
+                                android:layout_below="@id/sb_children"
+                                android:layout_alignParentRight="true"
+                        />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        android:layout_margin="@dimen/_8sdp">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_white"
+                            android:padding="@dimen/_8sdp">
+
+                        <TextView
+                                android:id="@+id/txt_number_woman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/purple"
+                                android:text="0"
+                        />
+                        <TextView
+                                android:id="@+id/txt_woman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="@string/woman"
+                                android:layout_below="@id/txt_number_woman"
+                        />
+
+                        <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:src="@drawable/ic_phunu"
+                                android:layout_below="@id/txt_number_woman"
+                                android:layout_alignParentRight="true"
+                        />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_4sdp"
+                                android:background="@drawable/bg_button_grey"
+                                android:layout_below="@id/txt_woman"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+                        <View
+                                android:id="@+id/sb_woman"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_4sdp"
+                                android:background="@drawable/bg_button_purple"
+                                android:layout_below="@id/txt_woman"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+                        <TextView
+                                android:id="@+id/txt_ratio_woman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="0/0 NGƯỜI"
+                                android:layout_below="@id/sb_woman"
+
+                        />
+
+                        <TextView
+                                android:id="@+id/txt_percent_woman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="0%"
+                                android:layout_below="@id/sb_woman"
+                                android:layout_alignParentRight="true"
+                        />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        android:layout_margin="@dimen/_8sdp">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_white"
+                            android:padding="@dimen/_8sdp">
+
+                        <TextView
+                                android:id="@+id/txt_number_elderly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/blue"
+                                android:text="0"
+                        />
+                        <TextView
+                                android:id="@+id/txt_elderly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="@string/elderly"
+                                android:layout_below="@id/txt_number_elderly"
+                        />
+
+                        <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:src="@drawable/ic_nguoigia"
+                                android:layout_below="@id/txt_number_elderly"
+                                android:layout_alignParentRight="true"
+                        />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_4sdp"
+                                android:background="@drawable/bg_button_grey"
+                                android:layout_below="@id/txt_elderly"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+                        <View
+                                android:id="@+id/sb_elderly"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_4sdp"
+                                android:background="@drawable/bg_button_blue"
+                                android:layout_below="@id/txt_elderly"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+                        <TextView
+                                android:id="@+id/txt_ratio_elderly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="0/0 NGƯỜI"
+                                android:layout_below="@id/sb_elderly"
+
+                        />
+
+                        <TextView
+                                android:id="@+id/txt_percent_elderly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="0%"
+                                android:layout_below="@id/sb_elderly"
+                                android:layout_alignParentRight="true"
+                        />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        android:layout_margin="@dimen/_8sdp">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_white"
+                            android:padding="@dimen/_8sdp">
+
+                        <TextView
+                                android:id="@+id/txt_number_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/orange"
+                                android:text="0"
+                        />
+                        <TextView
+                                android:id="@+id/txt_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="@string/total"
+                                android:layout_below="@id/txt_number_total"
+                        />
+
+                        <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:src="@drawable/ic_building_house"
+                                android:layout_below="@id/txt_number_total"
+                                android:layout_alignParentRight="true"
+                        />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_4sdp"
+                                android:background="@drawable/bg_button_grey"
+                                android:layout_below="@id/txt_total"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+                        <View
+                                android:id="@+id/sb_total"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_4sdp"
+                                android:background="@drawable/bg_button_orange"
+                                android:layout_below="@id/txt_total"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+                        <TextView
+                                android:id="@+id/txt_ratio_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="0/0 NGƯỜI"
+                                android:layout_below="@id/sb_total"
+
+                        />
+
+                        <TextView
+                                android:id="@+id/txt_percent_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="0%"
+                                android:layout_below="@id/sb_total"
+                                android:layout_alignParentRight="true"
+                        />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:visibility="gone"
+                >
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_white"
+                            android:padding="@dimen/_8sdp">
+
+                        <TextView
+                                android:id="@+id/txt_char_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/segoeui"
+                                android:textColor="@color/black"
+                                android:text="Tiến độ lập hồ sơ sức khỏe"
+                                android:layout_centerHorizontal="true"
+                        />
+
+                        <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/pie_char"
+                                android:layout_width="@dimen/_200sdp"
+                                android:layout_height="@dimen/_200sdp"
+                                android:layout_below="@id/txt_char_name"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_8sdp"
+                        >
+
+                        </com.github.mikephil.charting.charts.PieChart>
+
+                        <com.github.mikephil.charting.charts.LineChart
+                                android:id="@+id/line_chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_200sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_below="@id/pie_char"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_add"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ic_add_white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+    />
+</RelativeLayout>

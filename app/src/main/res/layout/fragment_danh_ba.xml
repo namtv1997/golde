@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_corner_top_white"
+            android:elevation="@dimen/_4sdp"
+    >
+
+        <TextView
+                android:id="@+id/btn_tim_kiem_csyt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/segoeui"
+                android:textSize="18sp"
+                android:text="@string/tim_kiem_csyt"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+        />
+
+        <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:layout_marginTop="@dimen/_4sdp"
+        />
+
+        <TextView
+                android:id="@+id/btn_danh_ba"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoeui"
+                android:textSize="18sp"
+                android:text="@string/danh_ba_da_luu"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

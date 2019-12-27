@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/background"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+    >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                app:civ_circle_background_color="@color/white"
+                android:src="@drawable/ic_avatar"
+                android:elevation="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+        />
+
+        <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoeui"
+                android:textSize="16sp"
+                android:text="Bác sĩ Nguyễn Văn A đã trả lời phản hồi
+của bạn."
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_16sdp"
+        />
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:textSize="14sp"
+            android:text="10 phút trước"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_66sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+    />
+
+</LinearLayout>

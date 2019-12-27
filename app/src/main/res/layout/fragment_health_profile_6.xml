@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/background"
+        android:focusable="true"
+        android:clickable="true"
+>
+
+    <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+    >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/bo_phan_phau_thuat"
+                android:gravity="center"
+        />
+
+        <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/nam_phau_thuat"
+                android:gravity="center"
+        />
+
+        <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+        />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/noi_phau_thuat"
+                android:gravity="center"
+        />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_tien_su_phau_thuat"
+            android:layout_below="@id/title"
+    >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_add_2"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/bg_circle_white"
+    />
+
+</RelativeLayout>

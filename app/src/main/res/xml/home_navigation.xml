@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tabs>
+
+    <tab
+        icon="@drawable/selector_home"
+        id="@+id/navigation_home"
+        title="@string/home"
+        />
+
+    <tab
+        icon="@drawable/selector_question"
+        id="@+id/navigation_room"
+        title="@string/hotline"/>
+
+    <tab
+        icon="@drawable/ic_tim_kiem_co_so_y_te"
+        id="@+id/navigation_contact"
+        title="@string/tim_kiem_csyt"/>
+
+    <tab
+        icon="@drawable/selector_setting"
+        id="@+id/navigation_setting"
+        title="@string/setting"/>
+
+</tabs>

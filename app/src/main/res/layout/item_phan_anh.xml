@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/white"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+    >
+
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_86sdp"
+                android:layout_height="@dimen/_86sdp"
+                android:src="@drawable/ef_image_placeholder"
+                android:layout_marginRight="@dimen/_8sdp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+        >
+
+            <TextView
+                    android:id="@+id/txt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_ui_semi_bold"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Cái nôi của kinh tế thị trường bị sứt mẻ khá nhiều do chiến dịch cải tạo công thương nghiệp trong cuối thập niên 1970. Khu vực kinh tế tư nhân tiếp tục bị bầm dập vào giữa thập niên 1990 khi các vụ án kinh tế bị hình sự hoá và xử rất nặng. "
+            />
+
+            <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/segoe_ui_light_italic"
+                    android:text="11/11/2019 15:30"
+                    android:layout_marginTop="@dimen/_4sdp"
+            />
+
+            <LinearLayout
+                    android:id="@+id/view_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:visibility="visible"
+            >
+                <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style = "?android:attr/ratingBarStyleSmall"
+                        android:rating="2.5"
+                />
+
+                <TextView
+                        android:id="@+id/txt_number_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:text="54 Đánh giá"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/view_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:visibility="gone"
+            >
+                <TextView
+                        android:id="@+id/txt_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/segoe_ui_light"
+                        android:text="150 Quan tâm"
+                        android:drawableLeft="@drawable/ic_heart"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/_4sdp"
+                />
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                >
+
+                    <TextView
+                            android:id="@+id/txt_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/segoe_ui_light"
+                            android:text="20 Bình luận"
+                            android:drawableLeft="@drawable/ic_comment"
+                            android:gravity="center"
+                            android:drawablePadding="@dimen/_4sdp"
+                    />
+
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/txt_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/segoe_ui_light"
+                        android:text="16 Chia sẻ"
+                        android:drawableLeft="@drawable/ic_share"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/_4sdp"
+                />
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/txt_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/segoeui"
+                    android:text="Đang chờ phản hồi..."
+                    android:drawableLeft="@drawable/ic_comment_primary"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/_4sdp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background"
+    />
+</LinearLayout>

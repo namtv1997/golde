@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:focusable="true"
+        android:clickable="true"
+>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="textEnd"
+                        android:text="@string/bien_phap_tranh_thai_dang_dung"
+                        android:paddingRight="@dimen/_8sdp"
+                />
+
+                <TextView
+                        android:id="@+id/edt_bien_phap_tranh_thai"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:hint="@string/chon_bien_phap_tranh_thai"
+                        android:inputType="textMultiLine"
+                        android:background="@drawable/bg_edt_white_stroke"
+                        android:padding="@dimen/_8sdp"
+                        android:textAlignment="textStart"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                        android:layout_marginRight="@dimen/_8sdp"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="textEnd"
+                        android:text="Kỳ có thai cuối dùng"
+                        android:paddingRight="@dimen/_8sdp"
+                />
+
+                <EditText
+                        android:id="@+id/edt_ky_co_thai_cuoi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:background="@drawable/bg_edt_white_stroke"
+                        android:padding="@dimen/_8sdp"
+                        android:inputType="textMultiLine"
+                        android:textAlignment="textStart"
+                        android:layout_marginRight="@dimen/_8sdp"
+                />
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="@dimen/_1sdp"
+                  android:background="@color/background"
+                  android:layout_marginTop="@dimen/_16sdp"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/tien_su_phu_khoa"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+            />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/so_lan_co_thai"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_so_lan_co_thai"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/so_lan_sinh_de"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_so_lan_sinh_de"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/so_lan_say_thai"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_so_lan_say_thai"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/de_thuong"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_de_thuong"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="Số lần phá thai"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_so_lan_pha_thai"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/de_mo"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_de_mo"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="Số lần đẻ đủ tháng"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_so_lan_de_du_thang"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/de_kho"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_de_kho"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/so_lan_de_non"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_so_lan_de_non"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                >
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="@string/so_con_hien_song"
+                            android:layout_gravity="center"
+                    />
+
+                    <EditText
+                            android:id="@+id/edt_so_con_hien_song"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="@dimen/_4sdp"
+                            android:background="@drawable/bg_edt_white_stroke"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                    />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="Bệnh phụ khoa"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+            />
+
+            <EditText
+                    android:id="@+id/edt_benh_phu_khoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edt_white_stroke"
+                    android:gravity="left"
+                    android:lines="5"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_margin="@dimen/_8sdp"
+            />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

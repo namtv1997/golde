@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:focusable="true"
+        android:clickable="true"
+>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+            >
+                <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_48sdp"
+                >
+                    <RadioButton
+                            android:id="@+id/cb_de_thuong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                            android:text="@string/de_thuong"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/segoeui"
+                            android:textSize="16sp"
+                            android:layoutDirection="rtl"
+                            android:textAlignment="textStart"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="@dimen/_16sdp"
+                    />
+
+                    <RadioButton
+                            android:id="@+id/cb_de_mo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                            android:text="@string/de_mo"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/segoeui"
+                            android:textSize="16sp"
+                            android:layoutDirection="rtl"
+                            android:textAlignment="textStart"
+                            android:layout_gravity="start"/>
+                </RadioGroup>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                >
+                    <CheckBox
+                            android:id="@+id/cb_de_thieu_thang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                            android:text="@string/de_thieu_thang"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/segoeui"
+                            android:textSize="16sp"
+                            android:layoutDirection="rtl"
+                            android:textAlignment="textStart"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="@dimen/_16sdp"
+                    />
+
+                    <CheckBox
+                            android:id="@+id/cb_bi_ngat_luc_de"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_checkbox_2"
+                            android:text="@string/bi_ngat_luc_de"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/segoeui"
+                            android:textSize="16sp"
+                            android:layoutDirection="rtl"
+                            android:textAlignment="textStart"
+                            android:layout_gravity="start"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/can_nang_luc_de"
+                        android:paddingLeft="@dimen/_16sdp"
+                />
+
+                <EditText
+                        android:id="@+id/edt_can_nang"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="textStart"
+                        android:paddingLeft="@dimen/_24sdp"
+                        android:background="@drawable/bg_edt_white_stroke"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="@string/chieu_dai_luc_de"
+                        android:paddingLeft="@dimen/_16sdp"
+                />
+
+                <EditText
+                        android:id="@+id/edt_chieu_dai"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="textStart"
+                        android:paddingLeft="@dimen/_24sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@drawable/bg_edt_white_stroke"
+                        android:layout_marginRight="@dimen/_16sdp"
+                />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="@dimen/_1sdp"
+                  android:background="@color/background"
+                  android:layout_marginTop="@dimen/_4sdp"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/di_tat_bam_sinh"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+            />
+
+            <EditText
+                    android:id="@+id/edt_di_tat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edt_white_stroke"
+                    android:gravity="left"
+                    android:lines="5"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_margin="@dimen/_8sdp"
+            />
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="@dimen/_1sdp"
+                  android:background="@color/background"
+                  android:layout_marginTop="@dimen/_4sdp"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="@string/van_de_khac"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+            />
+
+            <EditText
+                    android:id="@+id/edt_van_de_khac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edt_white_stroke"
+                    android:gravity="left"
+                    android:lines="5"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_margin="@dimen/_8sdp"
+            />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

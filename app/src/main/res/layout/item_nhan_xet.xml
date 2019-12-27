@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:elevation="@dimen/_4sdp"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+        >
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    app:civ_circle_background_color="@color/white"
+                    android:src="@drawable/ic_avatar"
+                    android:elevation="@dimen/_4sdp"
+                    android:layout_margin="@dimen/_8sdp"
+            />
+
+
+            <TextView
+                    android:id="@+id/txt_ten"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/segoeui"
+                    android:text="NVA"
+            />
+
+            <ImageView
+                    android:id="@+id/btn_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more_vert"
+                    android:layout_marginRight="@dimen/_8sdp"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_52sdp"
+        >
+
+            <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style = "?android:attr/ratingBarStyleSmall"
+                    android:rating="2.5"
+            />
+
+            <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    android:text="1 ngày trước"
+                    android:layout_marginLeft="@dimen/_4sdp"
+            />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txt_nhan_xet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Bình luận"
+                android:layout_marginLeft="@dimen/_52sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+        />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

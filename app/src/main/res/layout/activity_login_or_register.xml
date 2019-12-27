@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+    <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_56sdp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+    />
+
+    <Button
+            android:id="@+id/btn_phan_anh"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/bg_button_white"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/phan_anh"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:elevation="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            tools:fontFamily="@font/segoeui"
+            android:layout_above="@id/btn_register"/>
+    <Button
+            android:id="@+id/btn_register"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/bg_button_white"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/register"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:elevation="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            tools:fontFamily="@font/segoeui"
+            android:layout_above="@id/btn_login"/>
+
+    <Button
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/bg_button_primary"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="@string/login"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:elevation="@dimen/_2sdp"
+            android:layout_marginBottom="34dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_16sdp"
+    />
+</RelativeLayout>

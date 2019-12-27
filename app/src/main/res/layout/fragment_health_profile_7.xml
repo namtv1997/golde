@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:focusable="true"
+        android:clickable="true"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background"
+
+    >
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:padding="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/tien_su_di_ung"
+
+            />
+
+            <ImageView
+                    android:id="@+id/btn_add_du"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_add"
+                    android:padding="@dimen/_2sdp"
+            />
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+        >
+            <TextView
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/stt"
+                    android:gravity="center"
+            />
+
+            <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/laoi_di_ung"
+                    android:gravity="center"
+            />
+
+            <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/nguoi_mac"
+                    android:gravity="center"
+            />
+
+            <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/mo_ta"
+                    android:gravity="center"
+            />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_du"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_tien_su_di_ung"
+                android:nestedScrollingEnabled="false"
+        >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:padding="@dimen/_4sdp"
+        >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/tien_su_benh_tat"
+
+            />
+
+            <ImageView
+                    android:id="@+id/btn_add_benh"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_add"
+                    android:padding="@dimen/_2sdp"
+            />
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+        >
+            <TextView
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/stt"
+                    android:gravity="center"
+            />
+
+            <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/ten_benh"
+                    android:gravity="center"
+            />
+
+            <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/nguoi_mac"
+                    android:gravity="center"
+            />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_benh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_tien_su_benh"
+                android:nestedScrollingEnabled="false"
+        />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+    <RelativeLayout
+            android:id="@+id/view_title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:src="@drawable/ic_back"/>
+
+
+        <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/segoeui"
+                android:textSize="20sp"
+                android:text="@string/register_account"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                <ImageView
+                        android:id="@+id/img_logo"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/logo"
+                        android:layout_marginTop="@dimen/_32sdp"/>
+
+                <EditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/name"
+                        android:textColor="@color/black"
+                        android:inputType="textCapWords"/>
+
+                <EditText
+                        android:id="@+id/edt_dia_chi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/dia_chi"
+                        android:textColor="@color/black"
+                        android:inputType="textCapWords"/>
+
+                <EditText
+                        android:id="@+id/edt_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/birthday"
+                        android:textColor="@color/black"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                <EditText
+                        android:id="@+id/edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/phone"
+                        android:textColor="@color/black"
+                        android:inputType="phone"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                <EditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/email"
+                        android:textColor="@color/black"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                <EditText
+                        android:id="@+id/btn_csyt_lam_viec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/csyt_lam_viec"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_24dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:inputType="none"/>
+
+                <EditText
+                        android:id="@+id/edt_ma_bac_si"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/ma_bac_si"
+                        android:textColor="@color/black"
+                        android:inputType="text"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                <EditText
+                        android:id="@+id/edt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/ten_dang_nhap"
+                        android:textColor="@color/black"
+                        android:inputType="text"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                <EditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/password"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                <EditText
+                        android:id="@+id/edt_password_again"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="@string/enter_password_again"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                <CheckBox
+                        android:id="@+id/cb_agree_policy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_agree_with_policy"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:button="@drawable/selector_checkbox_2"/>
+
+                <TextView
+                        android:id="@+id/btn_register"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_42sdp"
+                        android:background="@drawable/bg_button_primary"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="@string/register"
+                        android:gravity="center"
+                        android:fontFamily="@font/segoeui"
+                        android:elevation="@dimen/_2sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_above="@id/btn_register"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_gravity="center_horizontal"/>
+
+                <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_32sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:text="@string/have_an_account_login"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/btn_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/segoeui"
+                            android:textSize="@dimen/_16sdp"
+                            android:text="@string/dang_nhap"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

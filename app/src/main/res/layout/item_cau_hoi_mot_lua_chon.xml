@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/_8sdp"
+>
+
+    <CheckBox
+            android:id="@+id/cb_dap_an"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_checkbox"
+            android:text="@string/de_mo"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoeui"
+            android:textSize="16sp"
+            android:layoutDirection="ltr"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:paddingLeft="@dimen/_16sdp"
+
+    />
+
+</LinearLayout>

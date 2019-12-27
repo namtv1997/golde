@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+>
+
+    <LinearLayout
+            android:id="@+id/btn_ngay_tang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+    >
+
+        <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_calendar_2"
+                android:layout_gravity="center_vertical"
+        />
+
+        <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_up"
+                android:layout_marginLeft="@dimen/_4sdp"
+        />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/ngay_tang_dan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/segoeui"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background"
+    />
+
+    <LinearLayout
+            android:id="@+id/btn_ngay_giam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+    >
+
+        <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_calendar_2"
+                android:layout_gravity="center_vertical"
+        />
+
+        <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_down"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_gravity="bottom"
+        />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/ngay_giam_dan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/segoeui"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background"
+    />
+
+    <LinearLayout
+            android:id="@+id/btn_quan_tam_tang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+    >
+
+        <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_heart_2"
+                android:layout_gravity="center_vertical"
+        />
+
+        <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_up"
+                android:layout_marginLeft="@dimen/_4sdp"
+        />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/so_luot_quan_tam_tang_dan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/segoeui"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background"
+    />
+
+    <LinearLayout
+            android:id="@+id/btn_quan_tam_giam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+    >
+
+        <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_heart_2"
+                android:layout_gravity="center_vertical"
+        />
+
+        <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_down"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_gravity="bottom"
+        />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/so_luot_quan_tam_giam"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/segoeui"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background"
+    />
+
+    <LinearLayout
+            android:id="@+id/btn_binh_luan_tang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+    >
+
+        <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_comment_2"
+                android:layout_gravity="center_vertical"
+        />
+
+        <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_up"
+                android:layout_marginLeft="@dimen/_4sdp"
+        />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/binh_luan_tang_dan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/segoeui"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background"
+    />
+
+    <LinearLayout
+            android:id="@+id/btn_binh_luan_giam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+    >
+
+        <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_comment_2"
+                android:layout_gravity="center_vertical"
+        />
+
+        <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_down"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_gravity="bottom"
+        />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/binh_luan_giam_dan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/segoeui"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background"
+    />
+
+</LinearLayout>

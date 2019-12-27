@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeui"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Kết quả khám bệnh"
+        android:layout_marginTop="@dimen/_4sdp"
+>
+
+</TextView>

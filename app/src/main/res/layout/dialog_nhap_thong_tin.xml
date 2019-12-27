@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:text="@string/dien_thong_tin_lien_he"
+            android:layout_margin="@dimen/_8sdp"
+    />
+
+    <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_white_stroke"
+            android:gravity="left"
+            android:hint="@string/name"
+            android:padding="@dimen/_8sdp"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoeui"
+            android:layout_margin="@dimen/_8sdp"
+    />
+
+    <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_white_stroke"
+            android:gravity="left"
+            android:inputType="phone"
+            android:hint="@string/dien_thoai"
+            android:padding="@dimen/_8sdp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoeui"
+            android:layout_margin="@dimen/_8sdp"
+    />
+
+    <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_white_stroke"
+            android:gravity="left"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:padding="@dimen/_8sdp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoeui"
+            android:layout_margin="@dimen/_8sdp"
+    />
+
+    <EditText
+            android:id="@+id/edt_dia_chi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_white_stroke"
+            android:gravity="left"
+            android:inputType="text"
+            android:hint="@string/dia_chi"
+            android:padding="@dimen/_8sdp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoeui"
+            android:layout_margin="@dimen/_8sdp"
+    />
+
+    <TextView
+            android:id="@+id/btn_tiep_tuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:text="@string/tiep_tuc"
+            android:textAllCaps="true"
+            android:background="@drawable/bg_btn_primary"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:gravity="center"
+    />
+
+    <TextView
+            android:id="@+id/txt_dia_diem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/hoac"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+    />
+
+    <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_primary"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/login"
+            android:gravity="center"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:layout_margin="@dimen/_8sdp"
+    />
+
+    <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/chua_co_tai_khoan"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+    />
+
+</LinearLayout>

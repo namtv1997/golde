@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:focusable="true"
+              android:clickable="true"
+>
+
+    <TextView
+            android:id="@+id/txt_cau_hoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Câu hỏi 1: Mức độ hài lòng"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:text="Bình thường"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+    />
+    
+    <LinearLayout 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:gravity="center"
+    >
+
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="center"
+        >
+
+            <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:background="@drawable/bg_button_grey"
+                    android:backgroundTint="@color/white"
+                    android:layout_below="@id/txt_children"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+            />
+
+            <View
+                    android:id="@+id/sb_children"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/bg_button_green"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_below="@id/txt_children"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_alignParentBottom="true"
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
